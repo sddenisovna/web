@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Анна",
+      "email": "anna@example.com",
+      "phone": "+7 (900) 123-45-67",
+      "password": "123456",
+      "registeredAt": "15 января 2026"
+    },
+    {
+      "name": "d[d[",
+      "email": "d[d[",
+      "phone": "d[d[",
+      "password": "d[d[",
+      "registeredAt": "24.04.2026, 01:03:32",
+      "id": "0Fj1TVN5i38"
+    },
+    {
+      "name": "дана",
+      "email": "дада",
+      "phone": "дада",
+      "password": "дада",
+      "registeredAt": "24.04.2026, 01:21:12",
+      "id": "FdUeLjQPKpk"
+    },
+    {
+      "name": "анна",
+      "email": "анна",
+      "phone": "анна",
+      "password": "анна",
+      "registeredAt": "24.04.2026, 18:27:12",
+      "id": "2mrANWaL08U"
+    },
+    {
+      "name": "анна",
+      "email": "анна@mail.ru",
+      "phone": "262565226",
+      "password": "анна",
+      "registeredAt": "24.04.2026, 18:28:20",
+      "id": "bH3iHAUHUho"
+    }
+  ],
+  "trainings": [],
+  "subscriptions": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

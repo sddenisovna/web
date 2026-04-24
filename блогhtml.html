@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>блог — точка баланса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="блогcss.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+       <a href="  ../главная/index.html" class="logo">точка баланса.</a>
+         <nav class="nav-menu">
+            <a href="../каталог/каталогhtml.html" class="nav-link active">каталог</a>
+            <a href="../тренеры/тренерыhtml.html" class="nav-link">тренеры</a>
+            <a href="../абонементы/абонементыhtml.html" class="nav-link">абонементы</a>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-outline"><i class="fas fa-user"></i> войти</button>
+            <div class="dropdown">
+                <button class="btn-outline dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <div class="dropdown-content">
+                     <a href="../вопросы/faqhtml.html"><i class="fas fa-question-circle"></i> FAQ</a>
+                     <a href="../блог/блогhtml.html"><i class="fas fa-blog"></i> блог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="page-title">
+            <h1>блог</h1>
+            <p>вдохновение, советы и новости для активных женщин</p>
+        </div>
+
+        <div class="blog-layout">
+            <!-- Левая колонка: главные статьи -->
+            <div class="blog-main">
+                <!-- Главная статья -->
+                <article class="featured-post">
+                    <div class="featured-post__image">
+                        <img src="https://i.pinimg.com/736x/ef/13/e3/ef13e3071a9c43ee336daef8f69af4f1.jpg" alt="девушка занимается йогой">
+                        <span class="featured-post__category">вдохновение</span>
+                    </div>
+                    <div class="featured-post__content">
+                        <h2>как найти баланс между работой, спортом и личной жизнью</h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar-alt"></i> 15 марта 2026</span>
+                            <span><i class="far fa-eye"></i> 2 345 просмотров</span>
+                            <span><i class="far fa-heart"></i> 156</span>
+                        </div>
+                        <p>Современная женщина часто оказывается в ловушке: нужно успевать везде и сразу. Как перестать чувствовать вину и выстроить гармоничный график? Делимся проверенными техниками от наших тренеров...</p>
+                        <a href="#" class="read-more">читать полностью →</a>
+                    </div>
+                </article>
+
+                <!-- Сетка обычных статей -->
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <div class="post-card__image">
+                            <img src="https://i.pinimg.com/736x/bd/d8/5b/bdd85b46022a92949e8ab9a0de5682d9.jpg" alt="пилатес">
+                            <span class="post-card__category">советы</span>
+                        </div>
+                        <div class="post-card__content">
+                            <h3>5 упражнений пилатеса для красивой осанки</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar-alt"></i> 10 марта 2026</span>
+                            </div>
+                            <p>Пилатес — идеальная практика для тех, кто хочет укрепить мышцы кора и избавиться от боли в спине...</p>
+                            <a href="#" class="read-more">читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-card__image">
+                            <img src="https://i.pinimg.com/736x/76/11/ee/7611ee7667c5f47af473835480dbaab8.jpg" alt="здоровое питание">
+                            <span class="post-card__category">нутрициология</span>
+                        </div>
+                        <div class="post-card__content">
+                            <h3>что есть до и после тренировки: гайд по питанию</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar-alt"></i> 5 марта 2026</span>
+                            </div>
+                            <p>Правильное питание — залог эффективных тренировок. Рассказываем, какие продукты дадут энергию, а какие помогут восстановиться...</p>
+                            <a href="#" class="read-more">читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-card__image">
+                            <img src="https://i.pinimg.com/originals/d3/60/90/d36090fb741d008a77956e003828849a.jpg?nii=t" alt="медитация">
+                            <span class="post-card__category">ментальное здоровье</span>
+                        </div>
+                        <div class="post-card__content">
+                            <h3>медитация для начинающих: с чего начать</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar-alt"></i> 28 февраля 2026</span>
+                            </div>
+                            <p>Всего 10 минут медитации в день могут изменить ваше состояние. Делимся простыми техниками для тех, кто никогда не медитировал...</p>
+                            <a href="#" class="read-more">читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-card__image">
+                            <img src="https://i.pinimg.com/736x/c7/53/3c/c7533c57a2adad3e22d947d9e8d36d53.jpg" alt="танцы">
+                            <span class="post-card__category">истории успеха</span>
+                        </div>
+                        <div class="post-card__content">
+                            <h3>история анны: как танцы помогли полюбить своё тело</h3>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar-alt"></i> 20 февраля 2026</span>
+                            </div>
+                            <p>«Раньше я стеснялась себя, а теперь танцую на сцене». Реальная история нашей ученицы, которая нашла себя в танцевальной студии...</p>
+                            <a href="#" class="read-more">читать →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- новостная колонка + журнал -->
+            <aside class="blog-sidebar">
+                <div class="news-column">
+                    <h3><i class="fas fa-newspaper"></i> новости клуба</h3>
+                    <div class="news-list">
+                        <div class="news-item">
+                            <span class="news-date">18 марта</span>
+                            <p>открыли новую студию в Промышленном районе! ждём вас на пробные занятия</p>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">15 марта</span>
+                            <p>весенний марафон «Точка баланса» — регистрация открыта до 25 марта</p>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">10 марта</span>
+                            <p>новый тренер по стретчингу — приглашаем на бесплатный мастер-класс 20 марта</p>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">5 марта</span>
+                            <p>акция «приведи подругу» продлена до конца месяца</p>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">1 марта</span>
+                            <p>обновление расписания: добавили утренние занятия йогой в 7:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="magazine-card__icon">
+                        <i class="fas fa-magazine"></i>
+                    </div>
+                    <h3>интересный женский журнал</h3>
+                    <p>а мы с рекомендациями! вдохновение, советы и последние новости в theGirl. читайте с нами!</p>
+                    <a href="https://thegirl.ru/" target="_blank" class="magazine-link">
+                        перейти на сайт журнала
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- популярные теги -->
+                <div class="tags-cloud">
+                    <h3><i class="fas fa-tags"></i> популярные теги</h3>
+                    <div class="tags-list">
+                        <a href="#">#йога</a>
+                        <a href="#">#пилатес</a>
+                        <a href="#">#стрейчинг</a>
+                        <a href="#">#здоровье</a>
+                        <a href="#">#питание</a>
+                        <a href="#">#медитация</a>
+                        <a href="#">#мотивация</a>
+                        <a href="#">#танцы</a>
+                        <a href="#">#советы</a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <!-- "читайте также" -->
+        <div class="also-read">
+            <h3>читайте также</h3>
+            <div class="also-read-grid">
+                <a href="#" class="also-read-item">
+                    <img src="https://i.pinimg.com/originals/1f/14/99/1f14990bfa6cb35bf9c4e1ba253e1932.png" alt="бег">
+                    <span>как начать бегать после долгого перерыва</span>
+                </a>
+                <a href="#" class="also-read-item">
+                    <img src="https://i.pinimg.com/736x/77/cc/23/77cc2399db732342df03a8d37501c00a.jpg" alt="спорт дома">
+                    <span>топ-10 упражнений для домашней тренировки</span>
+                </a>
+                <a href="#" class="also-read-item">
+                    <img src="https://i.pinimg.com/474x/9e/f8/61/9ef861c49cd1afec96cd036d5266b507.jpg?nii=t" alt="вода">
+                    <span>водный баланс: сколько пить спортсменам</span>
+                </a>
+                <a href="#" class="also-read-item">
+                    <img src="https://i.pinimg.com/736x/6d/81/db/6d81db108c497daaab879cefd4eb57d1.jpg" alt="сон">
+                    <span>как сон влияет на спортивные результаты</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>точка баланса</h4>
+                <p>спорт только для женщин.</p>
+                <p><i class="fas fa-envelope"></i> support@tochkaofbalance.ru</p>
+                <p><i class="fas fa-phone-alt"></i> +7 (800) 555-35-35</p>
+            </div>
+            <div class="footer-col">
+                <h4>для пользователей</h4>
+                <a href="../каталог/каталогhtml.html">каталог</a>
+                <a href="  ../главная/index.html">пробное занятие</a>
+            </div>
+            <div class="footer-col">
+                <h4>для организаторов</h4>
+                <a href="#">раздел в разработке</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            © 2026 точка баланса. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+
+<!-- регистрация/вход -->
+<div id="auth-modal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>добро пожаловать</h2>
+            <button class="modal-close" id="modalCloseBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="login">вход</button>
+                <button class="modal-tab" data-tab="register">регистрация</button>
+            </div>
+            <div id="login-form" class="modal-form active">
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="login-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="login-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="login-submit-btn">войти</button>
+                <div class="modal-footer-text">
+                    нет аккаунта? <button id="switch-to-register">зарегистрироваться</button>
+                </div>
+            </div>
+            <div id="register-form" class="modal-form">
+                <div class="form-group">
+                    <label>имя</label>
+                    <input type="text" id="register-name" placeholder="анна">
+                </div>
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="register-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>телефон</label>
+                    <input type="tel" id="register-phone" placeholder="+7 (900) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="register-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="register-submit-btn">зарегистрироваться</button>
+                <div class="modal-footer-text">
+                    уже есть аккаунт? <button id="switch-to-login">войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../auth.js"></script>
+<script src="блогts.js"></script>
+
+</body>
+</html>

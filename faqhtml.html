@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>вопросы и ответы — точка баланса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="faqcss.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+        <a href="  ../главная/index.html" class="logo">точка баланса.</a>
+         <nav class="nav-menu">
+            <a href="../каталог/каталогhtml.html" class="nav-link active">каталог</a>
+            <a href="../тренеры/тренерыhtml.html" class="nav-link">тренеры</a>
+            <a href="../абонементы/абонементыhtml.html" class="nav-link">абонементы</a>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-outline"><i class="fas fa-user"></i> войти</button>
+            <div class="dropdown">
+                <button class="btn-outline dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <div class="dropdown-content">
+                     <a href="../вопросы/faqhtml.html"><i class="fas fa-question-circle"></i> FAQ</a>
+                     <a href="../блог/блогhtml.html"><i class="fas fa-blog"></i> блог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="hero">
+            <h1>вопросы и ответы</h1>
+            <p>самые частые вопросы о наc</p>
+        </div>
+
+        <div class="faq-section">
+
+   
+    <div class="faq-category">
+        <h3>подписка</h3>
+
+        <details class="faq-item">
+            <summary>как оформить подписку?</summary>
+            <p>вы можете оформить подписку в разделе "абонементы", выбрав подходящий тариф или прямо в нашем зале. смотрите адреса наших студий и приходите, администраторы залов с радостью Вас проконсультируют!</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>можно ли отменить подписку?</summary>
+            <p>да, вы можете отменить подписку онлайн в личном кабинете или лично в студии в любой момент.</p>
+        </details>
+    </div>
+
+    <div class="faq-category">
+        <h3>оплата</h3>
+
+        <details class="faq-item">
+            <summary>какие способы оплаты доступны?</summary>
+            <p>мы принимаем банковские карты, сбп и наличные.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>есть ли возврат средств?</summary>
+            <p>возврат возможен в течение 14 дней при соблюдении условий.</p>
+        </details>
+    </div>
+
+    <div class="faq-category">
+        <h3>тренировка</h3>
+
+        <details class="faq-item">
+            <summary>нужен ли опыт для тренировок?</summary>
+            <p>в нашшем клубе есть разделение на сложности тренировок: новичок для тех кто только начинает заниматься и продвинутый для тех, кто уже давно в деле:)</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>что взять с собой на тренировку?</summary>
+            <p>удобную спортивную одежду, воду и хорошее настроение !</p>
+        </details>
+    </div>
+
+</div>
+
+        <div class="faq-section" id="faqContainer">
+        </div>
+
+        <div class="contact-section">
+            <h3><i class="fas fa-headset"></i> остались вопросы?</h3>
+            <p>напишите нам, и мы ответим в ближайшее время</p>
+            <div class="contact-buttons">
+                <a href="#" class="contact-btn email" id="emailBtn">
+                    <i class="fas fa-envelope"></i> support@tochkaofbalance.ru
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>точка баланса</h4>
+                <p>спорт только для женщин.</p>
+                <p><i class="fas fa-envelope"></i> support@tochkaofbalance.ru</p>
+                <p><i class="fas fa-phone-alt"></i> +7 (800) 555-35-35</p>
+            </div>
+            <div class="footer-col">
+                <h4>для пользователей</h4>
+                <a href="../каталог/каталогhtml.html">каталог</a>
+                <a href="  ../главная/index.html">пробное занятие</a>
+            </div>
+            <div class="footer-col">
+                <h4>для организаторов</h4>
+                <a href="#">раздел в разработке</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            © 2026 точка баланса. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<!-- МОДАЛЬНОЕ ОКНО ВХОДА/РЕГИСТРАЦИИ -->
+<div id="auth-modal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>добро пожаловать</h2>
+            <button class="modal-close" id="modalCloseBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="login">вход</button>
+                <button class="modal-tab" data-tab="register">регистрация</button>
+            </div>
+            
+            <div id="login-form" class="modal-form active">
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="login-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="login-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="login-submit-btn">войти</button>
+                <div class="modal-footer-text">
+                    нет аккаунта? <button id="switch-to-register">зарегистрироваться</button>
+                </div>
+            </div>
+            
+            <div id="register-form" class="modal-form">
+                <div class="form-group">
+                    <label>имя</label>
+                    <input type="text" id="register-name" placeholder="анна">
+                </div>
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="register-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>телефон</label>
+                    <input type="tel" id="register-phone" placeholder="+7 (900) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="register-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="register-submit-btn">зарегистрироваться</button>
+                <div class="modal-footer-text">
+                    уже есть аккаунт? <button id="switch-to-login">войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../auth.js"></script>
+<script src="faqts.js"></script>
+
+</body>
+</html>

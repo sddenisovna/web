@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>личный кабинет — точка баланса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Кабинетcss.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href=" ../главная/index.html" class="logo">точка баланса.</a>
+        <nav class="nav-menu">
+            <a href="../каталог/каталогhtml.html" class="nav-link">каталог</a>
+            <a href="../тренеры/тренерыhtml.html" class="nav-link">тренеры</a>
+            <a href="../абонементы/абонементыhtml.html" class="nav-link">абонементы</a>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-outline" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> выйти</button>
+            <div class="dropdown">
+                <button class="btn-outline dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <div class="dropdown-content">
+                    <a href="../вопросы/faqhtml.html"><i class="fas fa-question-circle"></i> FAQ</a>
+                    <a href="../блог/блогhtml.html"><i class="fas fa-blog"></i> блог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="cabinet-container">
+            <!-- Боковая панель -->
+            <aside class="cabinet-sidebar">
+                <div class="avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3 id="userName">Анна</h3>
+                <p id="userEmail">anna@example.com</p>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active" data-tab="profile"><i class="fas fa-user"></i> мой профиль</a></li>
+                    <li><a href="#" data-tab="trainings"><i class="fas fa-calendar-alt"></i> мои тренировки</a></li>
+                    <li><a href="#" data-tab="subscriptions"><i class="fas fa-ticket-alt"></i> мои абонементы</a></li>
+                </ul>
+                <button class="logout-btn" id="logoutSidebarBtn"><i class="fas fa-sign-out-alt"></i> выйти</button>
+            </aside>
+
+            <!-- Основной контент -->
+            <div class="cabinet-content">
+                <!-- Вкладка: Профиль -->
+                <div id="profile-tab" class="cabinet-card">
+                    <h2><i class="fas fa-user"></i> личная информация</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>имя</label>
+                            <p id="profileName">Анна</p>
+                        </div>
+                        <div class="info-item">
+                            <label>электронная почта</label>
+                            <p id="profileEmail">anna@example.com</p>
+                        </div>
+                        <div class="info-item">
+                            <label>телефон</label>
+                            <p id="profilePhone">+7 (900) 123-45-67</p>
+                        </div>
+                        <div class="info-item">
+                            <label>дата регистрации</label>
+                            <p id="profileDate">15 января 2026</p>
+                        </div>
+                    </div>
+                    <button class="edit-btn" id="editProfileBtn">редактировать профиль</button>
+                </div>
+
+                <!-- Вкладка: Мои тренировки -->
+                <div id="trainings-tab" class="cabinet-card" style="display: none;">
+                    <h2><i class="fas fa-calendar-alt"></i> мои тренировки</h2>
+                    <div class="trainings-list-cabinet" id="trainingsList"></div>
+                </div>
+
+                <!-- Вкладка: Мои абонементы -->
+                <div id="subscriptions-tab" class="cabinet-card" style="display: none;">
+                    <h2><i class="fas fa-ticket-alt"></i> мои абонементы</h2>
+                    <div id="subscriptionsList"></div>
+                    <!-- Добавь эту кнопку в боковую панель, под кнопкой выхода -->
+<button class="logout-btn" id="clearSubscriptionsBtn" style="margin-top: 10px; background: #f44336;">
+    <i class="fas fa-trash-alt"></i> очистить абонементы
+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>точка баланса</h4>
+                <p>спорт только для женщин.</p>
+                <p><i class="fas fa-envelope"></i> support@tochkaofbalance.ru</p>
+                <p><i class="fas fa-phone-alt"></i> +7 (800) 555-35-35</p>
+            </div>
+            <div class="footer-col">
+                <h4>для пользователей</h4>
+                <a href="../каталог/каталогhtml.html">каталог</a>
+                <a href=" ../главная/index.html">пробное занятие</a>
+            </div>
+            <div class="footer-col">
+                <h4>для организаторов</h4>
+                <a href="#">раздел в разработке</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            © 2026 точка баланса. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<script src="../auth.js"></script>
+<script src="кабинетts.js"></script>
+</body>
+</html>

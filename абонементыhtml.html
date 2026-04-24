@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>абонементы — точка баланса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="абонементыcss.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href=" ../главная/index.html" class="logo">точка баланса.</a>
+        <nav class="nav-menu">
+            <a href="../каталог/каталогhtml.html" class="nav-link">каталог</a>
+            <a href="../тренеры/тренерыhtml.html" class="nav-link">тренеры</a>
+            <a href="../абонементы/абонементыhtml.html" class="nav-link active">абонементы</a>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-outline" id="loginBtn"><i class="fas fa-user"></i> войти</button>
+            <div class="dropdown">
+                <button class="btn-outline dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <div class="dropdown-content">
+                    <a href="../вопросы/faqhtml.html"><i class="fas fa-question-circle"></i> FAQ</a>
+                    <a href="../блог/блогhtml.html"><i class="fas fa-blog"></i> блог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="page-title">
+            <h1>абонементы и пакеты занятий</h1>
+            <p>выбери ритм тренировок, который вдохновляет — от разовых визитов до безлимита на месяц</p>
+        </div>
+
+   
+        <div class="subscriptions-bubbles">
+        
+            <div class="sub-bubble sub-bubble--start">
+                <div class="sub-bubble__badge">4 занятия</div>
+                <div class="sub-bubble__icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3 class="sub-bubble__title">старт</h3>
+                <div class="sub-bubble__price">
+                    2 500 ₽ <span>/ месяц</span>
+                </div>
+                <ul class="sub-bubble__features">
+                    <li><i class="fas fa-check-circle"></i> 4 любых групповых занятия</li>
+                    <li><i class="fas fa-check-circle"></i> доступ по будням до 18:00</li>
+                    <li><i class="fas fa-times-circle"></i> заморозка — нет</li>
+                </ul>
+                <button class="sub-bubble__btn" data-sub="старт">выбрать абонемент</button>
+            </div>
+
+    
+            <div class="sub-bubble sub-bubble--active sub-bubble--popular">
+                <div class="sub-bubble__badge">
+                    8 занятий
+                    <span class="popular-tag">🔥 хит сезона</span>
+                </div>
+                <div class="sub-bubble__icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3 class="sub-bubble__title">актив</h3>
+                <div class="sub-bubble__price">
+                    3 000 ₽ <span>/ месяц</span>
+                </div>
+                <ul class="sub-bubble__features">
+                    <li><i class="fas fa-check-circle"></i> 8 групповых тренировок</li>
+                    <li><i class="fas fa-check-circle"></i> full day (любое время)</li>
+                    <li><i class="fas fa-check-circle"></i> заморозка 3 дня</li>
+                </ul>
+                <button class="sub-bubble__btn" data-sub="актив">выбрать абонемент</button>
+            </div>
+
+     
+            <div class="sub-bubble sub-bubble--premium">
+                <div class="sub-bubble__badge">30 занятий</div>
+                <div class="sub-bubble__icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3 class="sub-bubble__title">премиум</h3>
+                <div class="sub-bubble__price">
+                    7 900 ₽ <span>/ 2 месяца</span>
+                </div>
+                <ul class="sub-bubble__features">
+                    <li><i class="fas fa-check-circle"></i> 30 тренировок (йога/пилатес/танцы)</li>
+                    <li><i class="fas fa-check-circle"></i> + бесплатный гостевой визит</li>
+                    <li><i class="fas fa-check-circle"></i> full day (любое время)</li>
+                    <li><i class="fas fa-check-circle"></i> заморозка 7 дней</li>
+                </ul>
+                <button class="sub-bubble__btn" data-sub="премиум">выбрать абонемент</button>
+            </div>
+
+
+            <div class="sub-bubble sub-bubble--unlimited sub-bubble--popular">
+                <div class="sub-bubble__badge">
+                    ♾️ без ограничений
+                    <span class="popular-tag">🔥 топ</span>
+                </div>
+                <div class="sub-bubble__icon">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <h3 class="sub-bubble__title">безлимит</h3>
+                <div class="sub-bubble__price">
+                    4 990 ₽ <span>/ месяц</span>
+                </div>
+                <ul class="sub-bubble__features">
+                    <li><i class="fas fa-check-circle"></i> неограниченное число занятий</li>
+                    <li><i class="fas fa-check-circle"></i> приведи подругу 2 раза бесплатно</li>
+                    <li><i class="fas fa-check-circle"></i> заморозка до 14 дней</li>
+                </ul>
+                <button class="sub-bubble__btn" data-sub="безлимит">выбрать абонемент</button>
+            </div>
+        </div>
+
+
+        <div class="compare-section">
+            <h3>📊 сравните условия</h3>
+            <table class="compare-table">
+                <thead>
+                    <tr><th></th><th>старт</th><th>актив</th><th>премиум</th><th>безлимит</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>срок действия</td><td>1 месяц</td><td>1 месяц</td><td>2 месяца</td><td>1 месяц</td></tr>
+                    <tr><td>количество занятий</td><td>4 тренировки</td><td>8 тренировок</td><td>30 тренировок</td><td>🔥 безлимит</td></tr>
+                    <tr><td>заморозка</td><td>-</td><td>3 дня</td><td>7 дней</td><td>14 дней</td></tr>
+                    <tr><td>гостевые визиты</td><td>-</td><td>-</td><td>1 раз в месяц</td><td>2 раза</td></tr>
+                    <tr><td>персональный план</td><td>-</td><td>-</td><td><i class="fas fa-check check-icon"></i></td><td><i class="fas fa-check check-icon"></i></td></tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; font-size: 0.85rem; color:#a0887a;">* все абонементы действуют во всех клубах сети «точка баланса»</p>
+        </div>
+
+    
+        <div class="faq-sub">
+            <h3>❓ частые вопросы об абонементах</h3>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">можно ли заморозить абонемент? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Да, в зависимости от типа абонемента: от 3 до 14 дней заморозки. Достаточно написать в поддержку за 2 дня.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">можно ли продлить абонемент до окончания? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Конечно! Продление действует со скидкой 10% для владельцев активных абонементов.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">есть ли рассрочка? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Мы предлагаем беспроцентную рассрочку на 2 или 4 месяца на премиум и безлимит.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">можно ли поделиться абонементом с подругой? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Абонемент именной, но по безлимиту можно привести гостя 2 раза в месяц.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>точка баланса</h4>
+                <p>спорт только для женщин.</p>
+                <p><i class="fas fa-envelope"></i> support@tochkaofbalance.ru</p>
+                <p><i class="fas fa-phone-alt"></i> +7 (800) 555-35-35</p>
+            </div>
+            <div class="footer-col">
+                <h4>для пользователей</h4>
+                <a href="../каталог/каталогhtml.html">каталог</a>
+                <a href="  ../главная/index.html">пробное занятие</a>
+            </div>
+            <div class="footer-col">
+                <h4>для организаторов</h4>
+                <a href="#">раздел в разработке</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            © 2026 точка баланса. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+
+<div id="auth-modal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>добро пожаловать</h2>
+            <button class="modal-close" id="modalCloseBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-training-info" id="modalTrainingInfo" style="display: none;"></div>
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="login">вход</button>
+                <button class="modal-tab" data-tab="register">регистрация</button>
+            </div>
+            
+            <div id="login-form" class="modal-form active">
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="login-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="login-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="login-submit-btn">войти</button>
+                <div class="modal-footer-text">
+                    нет аккаунта? <button id="switch-to-register">зарегистрироваться</button>
+                </div>
+            </div>
+            
+            <div id="register-form" class="modal-form">
+                <div class="form-group">
+                    <label>имя</label>
+                    <input type="text" id="register-name" placeholder="анна">
+                </div>
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="register-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>телефон</label>
+                    <input type="tel" id="register-phone" placeholder="+7 (900) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="register-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="register-submit-btn">зарегистрироваться</button>
+                <div class="modal-footer-text">
+                    уже есть аккаунт? <button id="switch-to-login">войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../auth.js"></script>
+<script src="абонементыts.js"></script>
+
+</body>
+</html>

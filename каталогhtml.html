@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>каталог - точка баланса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="каталогcss.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href=" ../главная/index.html" class="logo">точка баланса.</a>
+        <nav class="nav-menu">
+            <a href="../каталог/каталогhtml.html" class="nav-link active">каталог</a>
+            <a href="../тренеры/тренерыhtml.html" class="nav-link">тренеры</a>
+            <a href="../абонементы/абонементыhtml.html" class="nav-link">абонементы</a>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-outline" id="loginBtn"><i class="fas fa-user"></i> войти</button>
+            <div class="dropdown">
+                <button class="btn-outline dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <div class="dropdown-content">
+                    <a href="../вопросы/faqhtml.html"><i class="fas fa-question-circle"></i> FAQ</a>
+                    <a href="../блог/блогhtml.html"><i class="fas fa-blog"></i> блог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="catalog-layout">
+            <!--  фильтры -->
+            <aside class="filters-sidebar">
+                <h3>поиск</h3>
+                <input type="text" class="search-input" id="searchInput" placeholder="поиск по виду спорта, тренеру, клубу...">
+                
+                <div class="filter-group">
+                    <label>вид спорта</label>
+                    <select id="sportFilter">
+                        <option value="">любой</option>
+                        <option>йога</option>
+                        <option>пилатес</option>
+                        <option>стрейчинг</option>
+                        <option>танцы</option>
+                        <option>силовые</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>район</label>
+                    <select id="districtFilter">
+                        <option value="">любой</option>
+                        <option>Самарский</option>
+                        <option>Ленинский</option>
+                        <option>Октябрьский</option>
+                        <option>Железнодорожный</option>
+                        <option>Советский</option>
+                        <option>Промышленный</option>
+                        <option>Кировский</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>дата</label>
+                    <input type="date" id="dateFilter">
+                </div>
+                
+                <div class="filter-group">
+                    <label>время</label>
+                    <select id="timeFilter">
+                        <option value="">любое</option>
+                        <option>утро (06:00-12:00)</option>
+                        <option>день (12:00-17:00)</option>
+                        <option>вечер (17:00-22:00)</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>формат</label>
+                    <select id="formatFilter">
+                        <option value="">любой</option>
+                        <option>разовое</option>
+                        <option>абонемент</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>уровень</label>
+                    <select id="levelFilter">
+                        <option value="">любой</option>
+                        <option>новичок</option>
+                        <option>продвинутый</option>
+                    </select>
+                </div>
+                
+                <a class="reset-link" id="resetFilters">сбросить всё</a>
+            </aside>
+
+            <!-- список занятий -->
+            <div class="trainings-list">
+                <div id="list-view">
+                    <div id="trainings-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>точка баланса</h4>
+                <p>спорт только для женщин.</p>
+                <p><i class="fas fa-envelope"></i> support@tochkaofbalance.ru</p>
+                <p><i class="fas fa-phone-alt"></i> +7 (800) 555-35-35</p>
+            </div>
+            <div class="footer-col">
+                <h4>для пользователей</h4>
+                <a href="../каталог/каталогhtml.html">каталог</a>
+                <a href=" ../главная/index.html">пробное занятие</a>
+            </div>
+            <div class="footer-col">
+                <h4>для организаторов</h4>
+                <a href="#">раздел в разработке</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            © 2026 точка баланса. Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<div id="auth-modal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>добро пожаловать</h2>
+            <button class="modal-close" id="modalCloseBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="login">вход</button>
+                <button class="modal-tab" data-tab="register">регистрация</button>
+            </div>
+            
+            <div id="login-form" class="modal-form active">
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="login-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="login-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="login-submit-btn">войти</button>
+                <div class="modal-footer-text">
+                    нет аккаунта? <button id="switch-to-register">зарегистрироваться</button>
+                </div>
+            </div>
+            
+            <div id="register-form" class="modal-form">
+                <div class="form-group">
+                    <label>имя</label>
+                    <input type="text" id="register-name" placeholder="анна">
+                </div>
+                <div class="form-group">
+                    <label>электронная почта</label>
+                    <input type="email" id="register-email" placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label>телефон</label>
+                    <input type="tel" id="register-phone" placeholder="+7 (900) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label>пароль</label>
+                    <input type="password" id="register-password" placeholder="••••••••">
+                </div>
+                <button class="modal-submit-btn" id="register-submit-btn">зарегистрироваться</button>
+                <div class="modal-footer-text">
+                    уже есть аккаунт? <button id="switch-to-login">войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../auth.js"></script>
+<script src="каталогts.js"></script>
+</body>
+</html>
